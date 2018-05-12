@@ -1,6 +1,7 @@
 @pad: 13px;
 @main-color: #2d83c4;
 @gray:#e1e8ee;
+@green: #32a569;
 .nav-link {
 	padding-top: @pad !important;
 	padding-bottom: @pad !important;
@@ -40,6 +41,15 @@
 }
 .g-color-asrtu {
 	color: @main-color;
+}
+.g-bg-asrtu-green {
+	background-color: @green !important;
+}
+.g-bg-asrtu-green-opacity-0_1 {
+	background-color: lighten(@green,34%) !important;
+}
+.g-color-asrtu-green {
+	color: @green;
 }
 .g-color-asrtu-dark {
 	color: darken(@gray,34%);
