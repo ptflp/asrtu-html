@@ -1,0 +1,52 @@
+@pad: 13px;
+@main-color: #2d83c4;
+@gray:#e1e8ee;
+.nav-link {
+	padding-top: @pad !important;
+	padding-bottom: @pad !important;
+	padding-right: 3px !important;
+	padding-left: 3px !important;
+	a{
+		color:blue !important;
+	}
+}
+.navbar .u-main-nav-v3 .nav-link {
+	border-top: 3px solid transparent;
+	border-bottom: none;
+}
+.navbar .u-main-nav-v3 .nav-item.active > .nav-link, .navbar .u-main-nav-v3 .nav-item:hover > .nav-link, .navbar .u-main-nav-v3 .nav-item:focus > .nav-link, .navbar .u-main-nav-v3 .nav-item.show > .nav-link, .navbar .u-main-nav-v3 .nav-item.hs-sub-menu-opened > .nav-link, .navbar .u-main-nav-v3 .nav-item .nav-link:focus {
+    border-color: @main-color;
+}
+.navbar .u-sub-menu-v3 .hs-sub-menu, .navbar .u-sub-menu-v3 .hs-mega-menu, .navbar .u-sub-menu-v3 .dropdown-menu {
+    border-top-color: @main-color;
+    border-bottom-color: darken(@gray,34%);
+}
+.navbar .u-sub-menu-v3 .hs-has-sub-menu .hs-has-sub-menu.active > a, .navbar .u-sub-menu-v3 .hs-has-sub-menu .hs-has-sub-menu:active > a, .navbar .u-sub-menu-v3 .hs-has-sub-menu .hs-has-sub-menu:focus > a, .navbar .u-sub-menu-v3 .hs-has-sub-menu .hs-has-sub-menu:hover > a, .navbar .u-sub-menu-v3 .hs-sub-menu .dropdown-item.active > a, .navbar .u-sub-menu-v3 .hs-sub-menu .dropdown-item:active > a, .navbar .u-sub-menu-v3 .hs-sub-menu .dropdown-item:focus > a, .navbar .u-sub-menu-v3 .hs-sub-menu .dropdown-item:hover > a, .navbar .u-sub-menu-v3 .dropdown-menu .dropdown-item.active > a, .navbar .u-sub-menu-v3 .dropdown-menu .dropdown-item:active > a, .navbar .u-sub-menu-v3 .dropdown-menu .dropdown-item:focus > a, .navbar .u-sub-menu-v3 .dropdown-menu .dropdown-item:hover > a, .navbar .u-sub-menu-v3 .hs-sub-menu a:active, .navbar .u-sub-menu-v3 .hs-sub-menu a:focus, .navbar .u-sub-menu-v3 .hs-sub-menu a:hover, .navbar .u-sub-menu-v3 .dropdown-menu a:active, .navbar .u-sub-menu-v3 .dropdown-menu a:focus, .navbar .u-sub-menu-v3 .dropdown-menu a:hover {
+    color: #fff !important;
+    background-color: @main-color;
+    border: none;
+}
+.g-bg-gray {
+    background-color: @gray !important;
+}
+.g-bg-asrtu {
+	background-color: @main-color !important;
+}
+.g-bg-red-opacity-0_1 {
+	background-color: lighten(@main-color,34%) !important;
+}
+.g-color-asrtu {
+	color: @main-color;
+}
+@media (min-width: 1200px) {
+	.container {
+    max-width: 1250px;
+	}
+}
+.u-btn-primary {
+    color: #fff;
+    background-color: @main-color;
+}
+.u-btn-primary:hover, .u-btn-primary.active {
+    background-color: lighten(@main-color,10%) !important;
+}
